@@ -71,9 +71,6 @@ html;
       
 
         <script>
-
-            
-
             $(document).ready(function(){
 
                 // var show = $(#eye);
