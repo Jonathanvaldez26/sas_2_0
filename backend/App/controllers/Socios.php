@@ -60,7 +60,7 @@ html;
 
     public function SociosAdd(){
 
-        $data = new \stdClass();
+        $data  = new \stdClass();
         $id_categoria = MasterDom::getDataAll('id_categoria');
         $nombre = MasterDom::getDataAll('nombre');
         $apellido_paterno = MasterDom::getDataAll('apellido_paterno');
@@ -81,28 +81,28 @@ html;
         $contrasena = MasterDom::getDataAll('contrasena');
        
 
-        $data->_id_categoria = $id_categoria;
-        $data->_nombre = $nombre;
-        $data->_apellido_paterno = $apellido_paterno;
-        $data->_apellido_materno =$apellido_materno;
-        $data->_id_prefijo =$id_prefijo;
-        $data->_nombre_constancia =$nombre_constancia;
-        $data->_rfc =$rfc;
-        $data->_calle =$calle;
-        $data->_numero_ext =$numero_ext;
-        $data->_numero_int =$numero_int;
-        $data->_colonia =$colonia;
-        $data->_del_o_municipio =$del_o_municipio;
-        $data->_cp =$cp;
-        $data->_id_estado =$id_estado;
-        $data->_lada =$lada;
-        $data->_telefono =$telefono;
-        $data->_email =$email;
-        $data->_contrasena =$contrasena;
+        $data ->_id_categoria = $id_categoria;
+        $data ->_nombre = $nombre;
+        $data ->_apellido_paterno = $apellido_paterno;
+        $data ->_apellido_materno =$apellido_materno;
+        $data ->_id_prefijo =$id_prefijo;
+        $data ->_nombre_constancia =$nombre_constancia;
+        $data ->_rfc =$rfc;
+        $data ->_calle =$calle;
+        $data ->_numero_ext =$numero_ext;
+        $data ->_numero_int =$numero_int;
+        $data ->_colonia =$colonia;
+        $data ->_del_o_municipio =$del_o_municipio;
+        $data ->_cp =$cp;
+        $data ->_id_estado =$id_estado;
+        $data ->_lada =$lada;
+        $data ->_telefono =$telefono;
+        $data ->_email =$email;
+        $data ->_contrasena =$contrasena;
 
 
 
-        $id = SociosDao::insert($data);
+        $id = SociosDao::insert($data );
         if($id >= 1){
             //$this->alerta($id,'add');
             echo "success";
